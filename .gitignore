@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+report/assets/title_reference.png
+report/preview/
+report/*.ps1
+report/capture.py
+report/build_report.py
+report/verification.json
+report/*.zip
+report/.~*
+~$*.docx

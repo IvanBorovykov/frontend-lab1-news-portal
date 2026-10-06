@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Боровиков Іван Олексійович, ІПЗ-31">
+  <title>Зворотний зв'язок — Київський вісник</title>
+</head>
+<body>
+  <header>
+    <img src="img/logo.svg" width="64" height="64" alt="Логотип Київського вісника" loading="lazy">
+    <h1>Київський вісник</h1>
+    <nav aria-label="Основна навігація">
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="index.html#hot">Гарячі новини</a></li>
+        <li><a href="culture.html">Новини культури</a></li>
+        <li><a href="index.html#economy">Новини економіки</a></li>
+        <li><a href="feedback.html" aria-current="page">Зворотний зв'язок</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Зворотний зв'язок</h2>
+    <p>Це навчальна форма без обробки та збереження повідомлень. Поля з позначкою «обов'язково» потрібно заповнити.</p>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Персональна інформація</legend>
+        <p>
+          <label for="full-name">Прізвище та ім'я (обов'язково)</label><br>
+          <input type="text" id="full-name" name="full-name" autocomplete="name" required>
+        </p>
+        <p>
+          <label for="email">Електронна пошта (обов'язково)</label><br>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </p>
+        <p>
+          <label for="age">Вік (від 1 до 120 років)</label><br>
+          <input type="number" id="age" name="age" min="1" max="120" step="1">
+        </p>
+        <fieldset>
+          <legend>Освіта</legend>
+          <p><input type="radio" id="education-full" name="education" value="full"> <label for="education-full">Повна середня</label></p>
+          <p><input type="radio" id="education-incomplete" name="education" value="incomplete"> <label for="education-incomplete">Неповна середня</label></p>
+          <p><input type="radio" id="education-higher" name="education" value="higher"> <label for="education-higher">Вища</label></p>
+          <p><input type="radio" id="education-professional" name="education" value="professional"> <label for="education-professional">Професійна</label></p>
+        </fieldset>
+      </fieldset>
+      <p>
+        <label for="purpose">Мета зворотного зв'язку</label><br>
+        <select id="purpose" name="purpose">
+          <option value="cooperation">Співпраця</option>
+          <option value="rights">Скарга на порушення права власності</option>
+          <option value="suggestion">Пропозиція</option>
+          <option value="error">Наявність помилки</option>
+        </select>
+      </p>
+      <p>
+        <label for="details">Детально (до 1000 символів)</label><br>
+        <textarea id="details" name="details" rows="6" cols="40" maxlength="1000"></textarea>
+      </p>
+      <p>
+        <input type="checkbox" id="consent" name="consent" value="yes" required>
+        <label for="consent">Погоджуюся на обробку персональних даних (обов'язково)</label>
+      </p>
+      <p>
+        <button type="submit">Надіслати</button>
+        <button type="reset">Очистити</button>
+      </p>
+    </form>
+    <p><a href="index.html">Повернутися на головну</a></p>
+  </main>
+  <footer>
+    <address>
+      Навчальна редакція: м. Київ, вул. Прикладна, 10.<br>
+      Телефони: <a href="tel:+380440000001">+380 (44) 000-00-01</a>, <a href="tel:+380440000002">+380 (44) 000-00-02</a>.
+    </address>
+    <p>© 2026 Боровиков І.О., ІПЗ-31</p>
+  </footer>
+</body>
+</html>

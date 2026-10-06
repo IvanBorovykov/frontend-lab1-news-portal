@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Логотип Київського вісника</title>
+  <rect width="64" height="64" rx="10" fill="#0057b7"/>
+  <path d="M12 48H52V54H12Z" fill="#ffd700"/>
+  <text x="32" y="40" text-anchor="middle" font-family="serif" font-size="36" fill="#ffffff">К</text>
+</svg>
